@@ -1,5 +1,4 @@
 // SPDX-License-Identifier: UNLICENSED
-
 pragma solidity ^0.8.20;
 
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
@@ -9,7 +8,6 @@ contract ElonNFT is ERC721URIStorage {
 
     //Counters.Counter private _tokenIds; -- replaced with below
     uint private _tokenIds;
-
     constructor() ERC721("ElonMusk", "ELON") {}
 
     function mintNFT() public returns (uint256) {
